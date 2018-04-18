@@ -1,1 +1,0 @@
-# vobbilder.dziejekhorinis.org
