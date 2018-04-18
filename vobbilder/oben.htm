@@ -13,7 +13,7 @@ function frameschreiben () {
 	//Rahmenfarben
 	var mycolor=new Array("#000000","#0000FF","#FF0000","#800080","#00FF00"); //mehr macht eigentlich keinen Sinn...
 	var kategorie = document.form1.kategorie.options[document.form1.kategorie.selectedIndex].text;
-	if (parent.document.getElementById && parent.document.getElementById("frame_unten") && top.document.getElementById("frame_unten").cols) {
+	if (parent.document.getElementById && parent.document.getElementById("frame_unten") && parent.document.getElementById("frame_unten").cols) {
 		if		(parent.document.getElementById("frame_unten").cols=="138,*" && document.form1.ansicht[1].checked) parent.document.getElementById("frame_unten").cols="438,*"
 		else if	(parent.document.getElementById("frame_unten").cols=="438,*" && document.form1.ansicht[0].checked) parent.document.getElementById("frame_unten").cols="138,*"
 	}
