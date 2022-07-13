@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            color: black;
+        }
+
+        .wrapper {
+            padding: 100px;
+            margin: 50px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-image: url('./background.webp')
+        }
+
+        .links-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+            .links {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+<div class="wrapper">
+    <div style="padding: 50px; display: flex; justify-content: center;">
+        <img width="500" src="./logo.png">
+    </div>
+    <div class="links-wrapper">
+        <div class="links" style="background-color: rgba(255, 255, 255, 0.6); padding: 10px; border-radius: 4px">
+            <a style="margin-right: 20px" href="./vobbilder">Galeria VOB’ów</a>
+            <a style="margin-right: 20px" href="./interactive_objects">Interaktywne voby</a>
+            <a style="margin-right: 20px" href="./pfx">Efekty PFX</a>
+            <a style="margin-right: 20px" href="./textures">Tekstury</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
